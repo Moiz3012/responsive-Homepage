@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Homepage</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 col-6">W.</div>
+        <div class="col-lg-1 d-none d-lg-block menuu"><a class="links" href="#">Home</a></div>
+        <div class="col-lg-1 d-none d-lg-block menuu"><a class="links" href="#">New</a></div>
+        <div class="col-lg-1 d-none d-lg-block menuu"><a class="links" href="#">Popular</a></div>
+        <div class="col-lg-1 d-none d-lg-block menuu">
+          <a class="links" href="#">Treanding</a>
+        </div>
+        <div class="col-lg-1 d-none d-lg-block menuu">
+          <a class="links" href="#">Categories</a>
+        </div>
+        <div class="d-block d-lg-none col-6 menuu">
+          <div class="ham1">
+            <a class="links" href="#" id="hamburger">
+              <img src="ham.png" class="ham"></div></a>
+              <!-- popup -->
+          </div>
+            </div><div class="menu">
+              <a href="#" class="close-menu">
+                  <div class="close-button">
+                      <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                          <g fill="#00001A" fill-rule="evenodd">
+                              <path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/>
+                              <path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/>
+                          </g>
+                      </svg>
+                  </div>
+              </a>
+              <ul>
+                  <li><a class="popups" href="#">Home</a></li>
+                  <li><a class="popups" href="#">New</a></li>
+                  <li><a class="popups" href="#">Popular</a></li>
+                  <li><a class="popups" href="#">Trending</a></li>
+                  <li><a class="popups" href="#">Categories</a></li>
+              </ul>
+          </div>
+
+            <div class="row">
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-12 d-none d-lg-block"><img src="img1.jpg" alt="image loading" class="homepage"></div>
+                  <div class="col-lg-12 d-block d-lg-none"><img src="img2.jpg" alt="image loading" class="homepage2"></div>
+                  <div class="col-lg-6 d-none d-lg-block"><p class="text1">The Bright<br>Future of<br>Web 3.0?</p></div>
+                  <div class="col-lg-6 d-block d-lg-none"><p class="text1">The Bright<br>Future of Web<br>3.0?</p></div>
+                  <div class="col-lg-6"><p class="text2">
+                    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                    But is it really fulfilling its promise?</p>
+                  <button type="button" class="button">READ MORE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 sidebar">
+                <div class="row">
+                  <col-12><H2 class="new"><br>New</H2><br></col-12>
+                  <col-12><h3 class="h3">Hydrogen VS Electric Cars</h3><p>Will hydrogen-fueled cars ever catch up to EVs?</p><hr class="custom-line"></col-12>
+                  <col-12><h3 class="h3">The Downsides of AI Artistry</h3><p>  What are the possible adverse effects of on-demand AI image generation?</p><hr class="custom-line">
+                  </col-12>
+                  <col-12><h3 class="h3">Is VC Funding Drying Up?</h3><p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p><hr class="custom-line">
+                </col-12>
+                </div>
+              </div>
+            </div>
+      <div class="row last">
+      <div class="col-lg-4 cards">
+        <div class="row">
+      <div class="col-4"><img src="laptop.jpg" alt="" class="pics"></div>
+      <div class="col-8"><h2 class="headings1">01</h2><h3 class="headings2">Reviving Retro PCs</h3><p class="text4">  What happens when old PCs are given modern upgrades?</p>
+      </div></div></div>
+
+      <div class="col-lg-4 cards">
+        <div class="row">
+        <div class="col-4"><img src="keyboard.jpg" alt="" class="pics"></div>
+        <div class="col-8"><h2 class="headings1">02</h2><h3 class="headings2">Top 10 Laptops of 2022</h3><p class="text4">Our best picks for various needs and budgets.</p></div>
+        </div></div>
+      <div class="col-lg-4 cards"><div class="row">
+        <div class="col-4"><img src="pc.jpg" alt="" class="pics"></div>
+        <div class="col-8"><h2 class="headings1">03</h2><h3 class="headings2">The Growth of Gaming</h3><p class="text4">  How the pandemic has sparked fresh opportunities.</p></div></div></div></div>
+      </div>
+    </div>
+  </body>
+  <script>
+var hamburger = document.getElementById('hamburger');
+var menu = document.querySelector('.menu');
+var closeMenu = document.querySelector('.close-menu');
+
+hamburger.addEventListener('click', function() {
+    menu.style.right = menu.style.right === '0%' ? '-70%' : '0%';
+});
+
+closeMenu.addEventListener('click', function() {
+    menu.style.right = '-70%';
+});
+  </script>
+</html>
